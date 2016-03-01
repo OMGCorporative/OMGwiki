@@ -1,3 +1,3 @@
 Welcome to the OMGwiki wiki!
 
-# Lets get started with go first.
+### Lets get started with go first.
