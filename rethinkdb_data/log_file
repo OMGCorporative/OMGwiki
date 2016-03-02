@@ -56,3 +56,8 @@
 2016-03-01T17:22:42.009898000 0.827291s notice: Listening for administrative HTTP connections on port 8080
 2016-03-01T17:22:42.010969000 0.828362s notice: Listening on addresses: 127.0.0.1, 192.168.1.181, ::1, fe80::1%1, fe80::1c6d:d9ff:fef2:54ad%7, fe80::7256:81ff:feae:288d%4
 2016-03-01T17:22:42.010986000 0.828379s notice: Server ready, "Aminaths_MacBook_Air_local_81p" 4c8b24d1-b6af-481a-804b-d02f78d072b7
+2016-03-02T10:16:55.957428000 14601.716570s notice: Server got SIGINT from pid 374, uid 503; shutting down...
+2016-03-02T10:16:55.960422000 14601.719558s notice: Shutting down client connections...
+2016-03-02T10:16:55.963249000 14601.722387s notice: All client connections closed.
+2016-03-02T10:16:55.963273000 14601.722408s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-03-02T10:16:55.977013000 14601.736150s notice: Storage engine shut down.
