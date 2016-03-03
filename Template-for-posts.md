@@ -27,7 +27,7 @@ End of three part post
   
   - Introduction
 
-  A short introduction goes here. The first few lines are important in getting the readers attention. Keep it simple and explain what the post is about. A single line or two should do for an introduction. For example, "This post is about posting your essays, tutorials and lessons on the Open Media Group Wiki. It's a guide for you to get git hooked up to your wiki branch effectively. Of course submitting to the wiki is easiest still on your browser."
+  A short introduction goes here. The first few lines are important in getting the readers attention. Keep it simple and explain what the post is about. A single line or two should do for an introduction. For example, ***"This post is about writing essays, tutorials and lessons on the Open Media Group Wiki. It's a guide for you to get git hooked up to your wiki branch effectively. Of course submitting to the wiki is easiest still on your browser."***
 
   - Who this is meant for
 
