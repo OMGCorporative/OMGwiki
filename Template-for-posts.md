@@ -18,6 +18,8 @@ For writing tips (tips on timely posts, relief, using pictures, media and lists)
 	
 	- For more help and discussion please join the OMGCo Slack group.
 
+End of three part post
+
 3. Resources
 4. Conclusions and revision.
 
