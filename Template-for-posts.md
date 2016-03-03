@@ -11,12 +11,15 @@ Main content, relief and conclusions follow right after the contents list. After
    - What you will learn 
    - Hang ups
 
-2. Submit from your local machine 
-3. How git pull, merge and push works
-4. Writing tips (timely posts, reliefs, pictures and lists)
-5. More Help
-6. Resources
-7. Conclusions and Revision
+2. Context (Submit from your local machine )
+
+To get an overall idea of how git pull, merge and push works, read up here [http://]
+For writing tips (tips on timely posts, relief, using pictures, media and lists) read here [http://]
+	
+	- For more help and discussion please join the OMGCo Slack group.
+
+3. Resources
+4. Conclusions and revision.
 
 ####### Note on structure
   
@@ -26,7 +29,7 @@ Main content, relief and conclusions follow right after the contents list. After
 
   - Who this is meant for
 
-  The Open Media Group wiki is a curriculum based on subjects by career programmers and newbies for programmers. Posts are categorized by level desired. Its assumed that entry level programming tutorials and Computer Science posts will be most popular. But you can pretty much write about anything programming, tech, popular science or computer science related. There is a seperate post about writing specific curriculum posts here [http://omgcoporative.github.com] To access current posts you can either sign up for a github account and join the Society, or contribute as a guest. 
+  The Open Media Group wiki is a curriculum based on subjects for career programmers and newbies written by programmers. Posts are categorized by level desired. Its assumed that entry level programming tutorials and Computer Science posts will be most popular. But you can pretty much write about anything programming, tech, popular science or computer science related. There is a seperate post about writing specific curriculum posts here [http://omgcoporative.github.com] To access current posts you can either sign up for a github account and join the Society, or contribute as a guest. 
   
   This template is meant for contributions in general (Wiki, tutorials, curriculum, general tips...etc). We will cover git basics, how to contribute and how to post from your machine locally. Its assumed that you are somewhat familiar with git basics. You can also simplify this post by writing seperate guidelines and then linking back here. You can always talk to us about simplifying a specific post and find more about contributions by requesting an invite on Slack here [http://omgco.slack.com]
 
@@ -41,14 +44,51 @@ Main content, relief and conclusions follow right after the contents list. After
 
 If you've worked with Sublime text and Git before, submitting and editing your wiki posts can help you maintain a workflow. Specially if you are continuing a series of tutorials or lessons. 
 
-Assuming you are submitting to the main repo, you can first create a directory and intialiaze Git.
+Assuming you are submitting to the main wiki, you can first create a directory and intialiaze Git. You can then pull the wiki/master branch.
 
-	```$ mkdir mywikidir
-	$ cd mywikidir
-	$ git init
 	```
 
-That said, your post is yours to write; add humor and ease into it. Make it as simple as you can. There's really no need to use big words unless your reader is already comfortable with your posts. Ratings for posts get people interested in what you have to say. We let our readers and students rate our content and suggest improvements. Remember, readers love it when you relate your own experiences.
+	$ mkdir mywikidir
+	$ cd mywikidir
+	$ git init
+
+	$ git remote add origin mywikipost git@github.com:OMGCorporative/OMGwiki.wiki.git
+	$ git remote
+	mywikipost
+	origin
+	```
+
+This effectively creates a remote called mywikipost on your machine and points it to our wiki HEAD:master branch. You can now either pull a file, folder or all wiki posts and make a local copy. Yes, we're giving it to you free, please use it responsibly (see creative commons license [http://www.omgcorporative.github.com/OMGwiki/wiki]).
+
+Now that you're ready to submit your post, you can initialize a branch for that. First check if that's already been done for you by fetching the master branch.
+
+	```
+	$ git read-tree --prefix=wikipages/ -u wiki
+	$ cd wikipages
+	$ git fetch wiki
+	$ git diff-tree -p wiki/master
+	```
+
+Check that you have a branch set up with 'git branch'.
+If that doesn't work. Use 'git pull'.
+
+You should now have a copy of posts on your machine. To make a new post you should open up a text editor and point it to that folder. In this case we're going to assume that you have Sublime Text set up. If you haven't done it already, read on [how to set up Sublime Text] before continuing.
+
+When you are done editing or writing a new post. Commit your changes and push back to the wiki repo. Remember to check your status with 'git status', and commit any changes before you push.
+
+	``` 
+	$ git status
+	$ git add .
+	$ git commit -am "new changes"
+	$ git push wiki HEAD:master
+	```
+
+Your changes should be reflected back on the wiki now. Your post is yours to write; add humor and ease into it. Make it as simple as you can. There's really no need to use big words unless your reader is already comfortable with your posts. Ratings for posts get people interested in what you have to say. We let our readers and students rate our content and suggest improvements. Remember, readers love it when you relate your own experiences.
+
+####### Resources
+
+
+###### Conclusion
 
 
 
