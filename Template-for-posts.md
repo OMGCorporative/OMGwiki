@@ -86,7 +86,14 @@ When you are done editing or writing a new post. Commit your changes and push ba
 Your changes should be reflected back on the wiki now. Your post is yours to write; add humor and ease into it. Make it as simple as you can. There's really no need to use big words unless your reader is already comfortable with your posts. Ratings for posts get people interested in what you have to say. We let our readers and students rate our content and suggest improvements. Remember, readers love it when you relate your own experiences.
 
 ####### Resources
+These docs are great for understanding how Git subtrees work.
+http://git-memo.readthedocs.org/en/latest/subtree.html
 
+For an in-depth look at Git markdown read the docs at 
+https://help.github.com/articles/basic-writing-and-formatting-syntax/
+
+For tips on how to write a killer first paragraph read
+http://essayheaven.blogspot.com/2009/11/writing-killer-first-paragraph.html
 
 ###### Conclusion
 
