@@ -42,7 +42,7 @@ End of three part post
   - Hang ups
   Your post may be merged with other edits, and any changes you make can also be merged to a previous commit. If you feel that your post loses its initial goals as decribed in the introduction, please make a pull request and reference back to the issue. Issues can be posted by anyone. Merging branches can have specific guides based on a particular curriculum. Please make sure that you go through Curriculum guides before posting. We keep a local copy of all posts as they first appear. Sometimes this is helpful to pull back a revision. In any case its best not to repeat yourself and create short, simple content (no more than 300 lines, or a 20 min read). **If your post gets too long, fire-up a seperate post and link back**.
 
-####### Submit from your local machine
+## Submit from your local machine
 
 If you've worked with Sublime text and Git before, submitting and editing your wiki posts can help you maintain a workflow. Specially if you are continuing a series of tutorials or lessons. 
 
