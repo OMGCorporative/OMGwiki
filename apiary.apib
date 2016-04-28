@@ -1,34 +1,24 @@
 FORMAT: 1A
 HOST: http://polls.apiblueprint.org/
 
-# OMGusers
+# omgprojects
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+## Projects Collection [/projects]
 
-## Questions Collection [/questions]
-
-### List All Questions [GET]
+### List All Projects [GET]
 
 + Response 200 (application/json)
 
         [
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
+                "project_name": "Designing an online teaching tool",
+                "published_at": "2016-04-05T08:40:51.620Z",
+                "featured": false,
+                "stats": [
                     {
-                        "choice": "Swift",
+                        "likes": 0,
                         "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
+                    },
                 ]
             }
         ]
@@ -42,12 +32,10 @@ form of choices.
 + Request (application/json)
 
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
+            "project_name": "Designing an online teaching tool",
+            "stats": [
+                "likes",
+                "votes"
             ]
         }
 
@@ -55,26 +43,18 @@ form of choices.
 
     + Headers
 
-            Location: /questions/2
+            Location: /projects/2
 
     + Body
 
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
+                "project_name": "Designing an online teaching tool",
+                "published_at": "2016-04-05T08:40:51.620Z",
+                "featured": false,
+                "stats": [
                     {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
+                        "likes": 0,
+                        "votes": 2048
+                    },
                 ]
             }
